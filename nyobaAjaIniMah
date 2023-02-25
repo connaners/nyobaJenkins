@@ -20,6 +20,12 @@ pipeline {
             }
         }
         
+        stage ('deploy') {
+            steps {
+                echo 'deploying'
+            }
+        }
+        
         stage('rilis'){
             steps {
                 echo 'story: user wanna login to OSS'
