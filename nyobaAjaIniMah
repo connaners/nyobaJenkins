@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        
+        stage('what?') {
+            steps {
+                echo "what's up?"
+            }
+        }
+        
+        stage('goodbye') {
+            steps {
+                echo 'bye'
+            }
+        }
+        
+        stage('rilis'){
+            steps {
+                echo 'story: user wanna login to OSS'
+                echo 'given: user login with valid data'
+                echo 'when: user login to OSS'
+                echo 'then: user directly go to Pengubahan Hak Akses page'
+            }
+        }
+    }
+}
